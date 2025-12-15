@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Insights Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <div class="logo">
+                <i class="ph-fill ph-chart-polar"></i>
+                <h1>Nexus<span>Analytics</span></h1>
+            </div>
+            <div class="user-profile">
+                <span>Admin View</span>
+                <i class="ph-fill ph-user-circle"></i>
+            </div>
+        </header>
+
+        <main>
+            <!-- Key Metrics Cards -->
+            <section class="metrics-grid">
+                <div class="card metric-card" id="total-customers-card">
+                    <div class="card-icon"><i class="ph-fill ph-users"></i></div>
+                    <div class="card-content">
+                        <h3>Total Customers</h3>
+                        <p class="metric-value">0</p>
+                        <span class="metric-delta">+12% vs last month</span>
+                    </div>
+                </div>
+                <div class="card metric-card">
+                    <div class="card-icon"><i class="ph-fill ph-crown"></i></div>
+                    <div class="card-content">
+                        <h3>Top Tier</h3>
+                        <p class="metric-value">Gold</p>
+                        <span class="metric-delta">Most popular tier</span>
+                    </div>
+                </div>
+                <div class="card metric-card">
+                    <div class="card-icon"><i class="ph-fill ph-globe-hemisphere-west"></i></div>
+                    <div class="card-content">
+                        <h3>Top Region</h3>
+                        <p class="metric-value" id="top-region">...</p>
+                        <span class="metric-delta">Highest engagement</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Charts Section -->
+            <section class="charts-grid">
+                <div class="card chart-card wide">
+                    <h2><i class="ph-fill ph-trend-up"></i> Customer Growth</h2>
+                    <div class="chart-container">
+                        <canvas id="growthChart"></canvas>
+                    </div>
+                </div>
+                <div class="card chart-card">
+                    <h2><i class="ph-fill ph-gender-intersex"></i> Gender Distribution</h2>
+                    <div class="chart-container">
+                        <canvas id="genderChart"></canvas>
+                    </div>
+                </div>
+                <div class="card chart-card">
+                    <h2><i class="ph-fill ph-map-pin"></i> Regional Distribution</h2>
+                    <div class="chart-container">
+                        <canvas id="regionChart"></canvas>
+                    </div>
+                </div>
+                <div class="card chart-card">
+                    <h2><i class="ph-fill ph-medal"></i> Loyalty Tiers</h2>
+                    <div class="chart-container">
+                        <canvas id="loyaltyChart"></canvas>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
