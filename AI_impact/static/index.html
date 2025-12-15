@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Impact on Jobs 2030</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Space+Grotesk:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI Impact <span class="highlight">2030</span></h1>
+            <p class="subtitle">Visualizing the Future of Work</p>
+        </header>
+
+        <div class="dashboard">
+            <aside class="sidebar">
+                <div class="filter-group">
+                    <label for="job-title-filter">Job Title</label>
+                    <select id="job-title-filter">
+                        <option value="all">All Jobs</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="education-filter">Education Level</label>
+                    <select id="education-filter">
+                        <option value="all">All Levels</option>
+                    </select>
+                </div>
+                <div class="kpi-card">
+                    <h3>Total Jobs Analyzed</h3>
+                    <p id="total-jobs">0</p>
+                </div>
+                 <div class="kpi-card">
+                    <h3>Avg AI Exposure</h3>
+                    <p id="avg-exposure">0</p>
+                </div>
+            </aside>
+            
+            <main class="charts-grid">
+                 <div class="chart-card large">
+                    <h2>AI Exposure vs. Salary</h2>
+                    <div id="scatter-plot"></div>
+                </div>
+                
+                <div class="chart-card">
+                    <h2>Automation Probability by Job</h2>
+                    <div id="bar-chart"></div>
+                </div>
+
+                <div class="chart-card">
+                    <h2>Risk Category Distribution</h2>
+                    <div id="pie-chart"></div>
+                </div>
+                 <div class="chart-card">
+                    <h2>Experience vs. Tech Growth</h2>
+                    <div id="tech-growth-chart"></div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
