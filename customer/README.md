@@ -2,8 +2,7 @@
 
 NexusAnalytics is a powerful, lightweight Customer Insights Dashboard designed to visualize customer data derived from CSV files. It transforms raw customer records into interactive charts and key metrics, helping businesses understand their demographics, regional distribution, and growth trends at a glance.
 
-![Dashboard Preview](https://placehold.co/600x400?text=Dashboard+Preview)
-*(Note: Replace with actual screenshot if available)*
+![Dashboard Preview](dashboard.png)
 
 ## 🚀 Key Features
 
